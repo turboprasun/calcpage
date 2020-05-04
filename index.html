@@ -7,46 +7,44 @@
     <link href="assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class='container'>
-    <div class='header'>Calculator</div>
-    <div class='display-border'>
-        <div class='display'></div>
-    </div>
-    <div class='input'>
-        <div class='line'>
-            <div class='number'>C</div>
-            <div class='number'><=</div>
-            <div class='number'>%</div>
-            <div class='number'></div>
-        </div>
-        <div class='line'>
-            <div class='number'>7</div>
-            <div class='number'>8</div>
-            <div class='number'>9</div>
-            <div class='number'>X</div>
-        </div>
-        <div class='line'>
-            <div class='number'>4</div>
-            <div class='number'>5</div>
-            <div class='number'>6</div>
-            <div class='number'>-</div>
-        </div>
-        <div class='last-line'>
-            <div class='mini-line-cont'>
-                <div class='mini-line'>
-                    <div class='number'>1</div>
-                    <div class='number'>2</div>
-                    <div class='number'>3</div>
+    <div class='calculator'>
+        <div class="header">Calculator</div>
+        <form name="form">
+            <div class='display'>
+            <div class='result'>
+                <input type='text' name="display" id="display"> 
+            </div>
+            </div>
+            <div class="buttons">
+                <div class="column">
+                        <input type="button" value="c" name="vcancel">
+                        <input type="button" value="7" name="v7">
+                        <input type="button" value="4" name="v4">
+                        <input type="button" value="1" name="v1">
+                        <input type="button" value="." name="vdot">
                 </div>
-                <div class='mini-line'>
-                    <div class='number'>.</div>
-                    <div class='number zero'>0</div>
-                    <div class='number equal'>=</div>
+                <div class="column">
+                        <input type="button" value="<" name="delete">
+                        <input type="button" value="8" name="v8">
+                        <input type="button" value="5" name="v5">
+                        <input type="button" value="2" name="v2">
+                        <input type="button" value="0" name="v0">
+                </div>
+                <div class="column">
+                        <input type="button" value="%" name="vpercent">
+                        <input type="button" value="9" name="v9">
+                        <input type="button" value="6" name="v6">
+                        <input type="button" value="3" name="v3">
+                        <input type="button" value="=" name="vequal">
+                </div>
+                <div class="column">
+                        <input type="button" value="/" name="vdiv">
+                        <input type="button" value="*" name="vmul">
+                        <input type="button" value="-" name="vsub">
+                        <input type="button" value="+" name="vadd">
                 </div>
             </div>
-            <div class='plus'>+</div>
-        </div>
-    </div>
+        </form>
     </div>
 </body>
 </html>
